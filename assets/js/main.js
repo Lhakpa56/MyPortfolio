@@ -60,11 +60,13 @@ document.querySelector('.contact__scroll').addEventListener('click', function (e
       });
   });
 
-  const toggle = document.getElementById('nav-toggle');
-  const menu = document.getElementById('nav-menu');
+const navMenu = document.getElementById('nav-menu'),
+      navToggle = document.getElementById('nav-toggle');
 
-  if (toggle && menu) {
-    toggle.addEventListener('click', () => {
-      menu.classList.toggle('show-menu');
-    });
-  }
+if (navToggle) {
+  navToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('show-menu');
+  });
+}
+
+
