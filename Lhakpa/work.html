@@ -1,0 +1,76 @@
+<<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <!-- =============== NAVBAR =============== -->
+<header class="header" id="header">
+  <nav class="nav container">
+    <div class="nav__menu" id="nav-menu">
+      <ul class="nav__list">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="services.html" class="nav__link">Services</a></li>
+        <li><a href="resume.html" class="nav__link">Resume</a></li>
+        <li><a href="skills.html" class="nav__link">Skills</a></li>
+        <li><a href="testimonials.html" class="nav__link">Testimonials</a></li>
+        <li><a href="work.html" class="nav__link">Work</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="nav__toggle" id="nav-toggle">
+      <i class="ri-menu-fill"></i>
+    </div>
+  </nav>
+</header>
+
+      <section class="projects section container" id="projects">
+  <h2 class="section__title">Work</h2>
+
+  <!-- Filter Buttons -->
+  <div class="project__categories">
+    <button class="category__btn active" data-filter="all">ALL</button>
+    <button class="category__btn" data-filter="websites">WEB-SITES</button>
+    <button class="category__btn" data-filter="landing">LANDING PAGES</button>
+    <button class="category__btn" data-filter="mobile">MOBILE APPS</button>
+  </div>
+
+  <!-- Project Display Area -->
+  <div class="project__display">
+    <!-- Website projects -->
+    <div class="project__item" data-category="websites">
+      <img src="assets/img/project-1.png" alt="Mental Health Chatbot AI" class="project__img" />
+      <h3 class="project__title">Mental Health Chatbot AI</h3>
+      <p class="project__description">AI-powered chatbot providing mental health support.</p>
+      <p class="project__stack">Tech: Python, TensorFlow, NLTK</p>
+      <a href="https://vercell.com" target="_blank" class="project__link">vercell.com</a>
+    </div>
+
+    <!-- Landing page projects -->
+    <div class="project__item" data-category="landing" style="display:none;">
+      <img src="assets/img/project-2.png" alt="Landing Page for Startup" class="project__img" />
+      <h3 class="project__title">Landing Page for Startup</h3>
+      <p class="project__description">Responsive landing page designed for lead generation.</p>
+      <p class="project__stack">Tech: HTML, CSS, JavaScript</p>
+      <a href="#" class="project__link">View Project</a>
+    </div>
+
+    <!-- Mobile app projects -->
+    <div class="project__item" data-category="mobile" style="display:none;">
+      <img src="assets/img/project-3.png" alt="Fitness Tracker App" class="project__img" />
+      <h3 class="project__title">Fitness Tracker App</h3>
+      <p class="project__description">Mobile app to track workouts and progress.</p>
+      <p class="project__stack">Tech: React Native, Firebase</p>
+      <a href="#" class="project__link">View Project</a>
+    </div>
+  </div>
+</section>
+</body>
+<script src="assets/js/mixitup.min.js"></script>
+
+</html>

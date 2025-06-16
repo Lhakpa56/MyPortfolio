@@ -1,0 +1,91 @@
+<!--=============== Contact ===============-->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <!-- =============== NAVBAR =============== -->
+<header class="header" id="header">
+  <nav class="nav container">
+    <a href="index.html" class="nav__logo">Lhakpa</a>
+
+    <div class="nav__menu" id="nav-menu">
+      <ul class="nav__list">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="services.html" class="nav__link">Services</a></li>
+        <li><a href="resume.html" class="nav__link">Resume</a></li>
+        <li><a href="skills.html" class="nav__link">Skills</a></li>
+        <li><a href="testimonials.html" class="nav__link">Testimonials</a></li>
+        <li><a href="work.html" class="nav__link">Work</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="nav__toggle" id="nav-toggle">
+      <i class="ri-menu-line"></i>
+    </div>
+  </nav>
+</header>
+
+      <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+      <section class="contact section container" id="contact">
+  <h2 class="section__title">Contact Me</h2>
+
+  <div class="contact__container grid">
+    <!-- Left side - Contact Info -->
+    <div class="contact__info">
+      <h3 class="contact__subtitle">Get in touch</h3>
+      <p class="contact__description">Feel free to reach out for projects or collaborations.</p>
+
+      <div class="contact__details">
+        <p><strong>Name:</strong> Lhakpa Tenji Sherpa</p>
+        <p><strong>Email:</strong> lhakpaxerpa10@gmail.com</p>
+        <p><strong>Phone:</strong> +977-9820276027</p>
+      </div>
+
+      <div class="contact__socials">
+        <a href="https://www.facebook.com/lhakpa.tenji.sherpa.768184" target="_blank" class="contact__social-link">
+          <i class="ri-facebook-fill"></i>
+        </a>
+        <a href="https://www.instagram.com/lhakpa_tenji/" target="_blank" class="contact__social-link">
+          <i class="ri-instagram-line"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/lhakpa-tenji-sherpa-chirring-dorzee-sherpa-b6a7232ab/" target="_blank" class="contact__social-link">
+          <i class="ri-linkedin-fill"></i>
+        </a>
+        <a href="https://github.com/Lhakpa56" target="_blank" class="contact__social-link">
+          <i class="ri-github-fill"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Right side - Contact Form -->
+    <form id="contact-form" class="contact__form">
+      <div class="contact__form-group">
+        <label for="name" class="contact__label">Your Name</label>
+        <input type="text" name="name" id="name" class="contact__input" placeholder="Your name" required />
+      </div>
+
+      <div class="contact__form-group">
+        <label for="email" class="contact__label">Your Email</label>
+        <input type="email" name="email" id="email" class="contact__input" placeholder="your.email@example.com" required />
+      </div>
+
+      <div class="contact__form-group">
+        <label for="message" class="contact__label">Your Message</label>
+        <textarea name="message" id="message" rows="5" class="contact__input" placeholder="Write your message here..." required></textarea>
+      </div>
+
+      <button type="submit" class="button button--flex contact__button">
+        Send Message
+        <i class="ri-send-plane-fill button__icon"></i>
+      </button>
+    </form>
+  </div>
+</section>
